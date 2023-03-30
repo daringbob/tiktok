@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from '../Component/Header';
 import Sidebar from './Sidebar';
+import styles from './DefaultLayout.module.scss';
+import clsx from 'clsx';
 
 function DefaultLayout({ children }) {
     return (
-        <div>
+        <div className={clsx(styles.wrapper)}>
             <Header />
-            <div className="container">
+            <div className={clsx(styles.container)}>
                 <Sidebar />
-                <div>{children}</div>
+                <div className={clsx(styles.content)}>{children}</div>
             </div>
         </div>
     );

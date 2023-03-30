@@ -7,10 +7,14 @@ $color_confirm_tick: #20d5ec;
     --color-background-white: #fff;
     --color-background-black: #333;
     --color-confirm-tick: $color_confirm_tick;
+    --content-width: 1150px;
+    --content-header-heigh: 60px;
 }
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
